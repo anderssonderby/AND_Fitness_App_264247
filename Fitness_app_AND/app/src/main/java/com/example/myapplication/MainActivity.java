@@ -24,7 +24,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static int RC_SIGN_IN;
-    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,19 +58,10 @@ public class MainActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
                 // Successfully signed in
-                user = FirebaseAuth.getInstance().getCurrentUser();
-                // ...
-            } else {
-                // Sign in failed. If response is null the user canceled the
-                // sign-in flow using the back button. Otherwise check
-                // response.getError().getErrorCode() and handle the error.
-                // ...
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
             }
         }
-    }
-
-    public FirebaseUser getUser() {
-        return user;
     }
 
     public void userSignOut() {
@@ -79,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
                 .signOut(this)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     public void onComplete(@NonNull Task<Void> task) {
-                        // ...
                         Toast.makeText(getApplicationContext(), "User successfully logged out", Toast.LENGTH_LONG).show();
                     }
                 });
