@@ -24,6 +24,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static int RC_SIGN_IN;
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAvailableProviders(providers)
                         .setLogo(R.mipmap.app_icon)
                         .build(), RC_SIGN_IN);
+
     }
 
     @Override
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
                 // Successfully signed in
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                user = FirebaseAuth.getInstance().getCurrentUser();
                 // ...
             } else {
                 // Sign in failed. If response is null the user canceled the
@@ -66,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
                 // ...
             }
         }
+    }
+
+    public FirebaseUser getUser() {
+        return user;
     }
 
     public void userSignOut() {
