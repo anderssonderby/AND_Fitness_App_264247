@@ -1,0 +1,29 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="language_entries">
+        <item>English</item>
+        <item>Deutsch</item>
+        <item>Español (None available)</item>
+        <item>Nederlands</item>
+        <item>Norsk (None available)</item>
+        <item>Português</item>
+        <item>Svenska</item>
+        <item>ελληνικά (None available)</item>
+        <item>български език (None available)</item>
+        <item>Русский</item>
+    </string-array>
+
+    <!--I had to make this a string array otherwise the app would crash with a nullptr exception-->
+    <string-array name="reply_language">
+        <item>2</item>
+        <item>1</item>
+        <item>4</item>
+        <item>6</item>
+        <item>11</item>
+        <item>7</item>
+        <item>10</item>
+        <item>8</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+</resources>

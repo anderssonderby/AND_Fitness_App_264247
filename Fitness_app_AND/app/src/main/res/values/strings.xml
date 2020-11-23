@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AND Fitness app</string>
+    <string name="hello_blank_fragment">New fragment, change this!</string>
+    <string name="title_more">More</string>
+    <string name="title_exercises">Exercises</string>
+    <string name="title_exercise">Exercise Title</string>
+    <string name="name_exercise">Exercise name:</string>
+    <string name="description_exercise">Description:</string>
+    <string name="title_workouts">Workouts</string>
+    <string name="title_workout_history">Workout history:</string>
+    <string name="button_log_new_workout">Log new workout</string>
+
+    <!-- Workout recycler item text -->
+    <string name="workout_item_mg">Workout Muscle Group</string>
+    <string name="workout_item_description">Workout Description</string>
+    <string name="workout_item_date">Workout Date</string>
+
+    <!-- Log workout text -->
+    <string name="log_muscle_group">Muscle group:</string>
+    <string name="log_back">Back</string>
+    <string name="log_workout">Log</string>
+    <string name="log_description_hint">provide a brief description of the workout here</string>
+    <string name="log_mg_hint">eg. Shoulders, legs, chest</string>
+    <string name="log_error">All fields must be filled to log a workout!</string>
+
+    <!-- Preference Titles -->
+    <string name="exercises_header">Exercises</string>
+
+    <!-- Exercises Preferences -->
+    <string name="language_title">Default language for exercises</string>
+
+</resources>
