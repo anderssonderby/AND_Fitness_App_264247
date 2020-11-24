@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
                         .setAvailableProviders(providers)
-                        .setLogo(R.mipmap.app_icon)
+                        .setLogo(R.drawable.ic_dumbbell)
                         .build(), RC_SIGN_IN);
 
     }
@@ -71,6 +71,16 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(getApplicationContext(), "User successfully logged out", Toast.LENGTH_LONG).show();
                     }
+                });
+    }
+
+    public void userDeleteAccount() {
+        AuthUI.getInstance()
+                .delete(this)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Toast.makeText(getApplicationContext(), "User account deleted", Toast.LENGTH_LONG).show();                    }
                 });
     }
 }

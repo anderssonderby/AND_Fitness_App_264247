@@ -15,6 +15,11 @@
             app:title="@string/pref_signout_title"
             app:key="pref_signOut"
             app:summary="@string/pref_signout_desc"/>
+
+        <Preference
+            app:title="@string/pref_delete_title"
+            app:key="pref_delete"
+            app:summary="@string/pref_delete_desc"/>
     </PreferenceCategory>
 
 </PreferenceScreen>

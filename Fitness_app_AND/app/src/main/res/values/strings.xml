@@ -26,9 +26,11 @@
     <!-- Preference Titles -->
     <string name="exercises_header">Exercises</string>
     <string name="pref_signout_title">Sign out</string>
+    <string name="pref_delete_title">Delete account</string>
 
     <!-- Exercises Preferences -->
     <string name="language_title">Default language for exercises</string>
     <string name="pref_signout_desc">This will sign you out of your account. You will have to log back in to access the app.</string>
+    <string name="pref_delete_desc">This will delete your account from the system.</string>
 
 </resources>

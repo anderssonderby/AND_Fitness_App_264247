@@ -22,5 +22,14 @@ public class MoreFragment extends PreferenceFragmentCompat {
                 return true;
             }
         });
+
+        Preference prefDelete = findPreference("pref_delete");
+        prefDelete.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                ((MainActivity) getActivity()).userDeleteAccount();
+                return true;
+            }
+        });
     }
 }
