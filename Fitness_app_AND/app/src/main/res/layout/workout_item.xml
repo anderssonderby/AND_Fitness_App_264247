@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="120dp"
-    android:background="#CFCFCF"
     android:layout_marginBottom="20dp"
+    android:background="@color/app_sec_light"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -19,6 +19,7 @@
             android:paddingStart="10dp"
             android:paddingEnd="0dp"
             android:text="@string/workout_item_description"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <TextView
@@ -28,6 +29,7 @@
             android:paddingStart="10dp"
             android:paddingEnd="0dp"
             android:text="@string/workout_item_mg"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -41,14 +43,13 @@
             android:id="@+id/workout_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/workout_item_date"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
+            android:text="@string/workout_item_date"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>

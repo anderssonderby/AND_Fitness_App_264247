@@ -16,6 +16,7 @@
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="@string/button_log_new_workout"
+        android:textColor="@color/app_main"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editTextMuscleGroup"
@@ -30,6 +31,7 @@
         android:layout_marginStart="9dp"
         android:layout_marginTop="8dp"
         android:text="@string/log_muscle_group"
+        android:textColor="@color/app_sec"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/editTextMuscleGroup"
@@ -55,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/description_exercise"
+        android:textColor="@color/app_sec"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView9"
@@ -82,24 +85,20 @@
         android:id="@+id/button_log"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
         android:layout_marginTop="26dp"
-        android:layout_marginEnd="61dp"
+        android:layout_marginEnd="30dp"
         android:text="@string/log_workout"
-        app:layout_constraintEnd_toEndOf="@+id/calendarView"
-        app:layout_constraintStart_toStartOf="@+id/editTextMuscleGroup"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
     <Button
         android:id="@+id/button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="26dp"
-        android:layout_marginEnd="58dp"
         android:text="@string/log_back"
-        app:layout_constraintEnd_toStartOf="@+id/button_log"
-        app:layout_constraintStart_toStartOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
     <CalendarView

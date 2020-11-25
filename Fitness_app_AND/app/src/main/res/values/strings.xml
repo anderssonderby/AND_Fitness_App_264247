@@ -7,7 +7,7 @@
     <string name="name_exercise">Exercise name:</string>
     <string name="description_exercise">Description:</string>
     <string name="title_workouts">Workouts</string>
-    <string name="title_workout_history">Workout history:</string>
+    <string name="title_workout_history">Workout history</string>
     <string name="button_log_new_workout">Log new workout</string>
 
     <!-- Workout recycler item text -->
@@ -18,7 +18,7 @@
     <!-- Log workout text -->
     <string name="log_muscle_group">Muscle group:</string>
     <string name="log_back">Back</string>
-    <string name="log_workout">Log</string>
+    <string name="log_workout">Log workout</string>
     <string name="log_description_hint">provide a brief description of the workout here</string>
     <string name="log_mg_hint">eg. Shoulders, legs, chest</string>
     <string name="log_error">All fields must be filled to log a workout!</string>

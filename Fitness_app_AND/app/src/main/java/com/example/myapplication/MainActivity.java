@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         .createSignInIntentBuilder()
                         .setAvailableProviders(providers)
                         .setLogo(R.drawable.ic_dumbbell)
+                        .setTheme(R.style.Theme_Fitness_app_AND)
                         .build(), RC_SIGN_IN);
 
     }
