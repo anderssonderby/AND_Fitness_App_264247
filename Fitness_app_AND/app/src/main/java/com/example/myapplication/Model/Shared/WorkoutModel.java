@@ -40,19 +40,8 @@ public class WorkoutModel {
         this.id = id;
     }
 
-    public void set_workoutDate(Date _workoutDate) {
-        this._workoutDate = _workoutDate;
-    }
-
-    public void set_description(String _description) {
-        this._description = _description;
-    }
-
     public String getMuscleGroup() {
         return muscleGroup;
     }
 
-    public void setMuscleGroup(String muscleGroup) {
-        this.muscleGroup = muscleGroup;
-    }
 }

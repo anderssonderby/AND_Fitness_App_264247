@@ -8,6 +8,4 @@ public interface wgerAPI {
 
     @GET("api/v2/exercise/")
     Call<ExerciseResponse> getExercises(@Query("language") int languageID);
-    // TODO: Use languageID for settings
-//    @Path("langID") int languageID
 }
